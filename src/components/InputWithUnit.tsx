@@ -24,6 +24,7 @@ export class InputWithUnit extends React.Component<InputWithUnitProps, {}> {
                     inputRef={this.props.inputRef}
                     type="number"
                     pattern="[0-9]*"
+                    inputMode="numeric"
                     overrides={{
                         After: () => (
                         <Select
