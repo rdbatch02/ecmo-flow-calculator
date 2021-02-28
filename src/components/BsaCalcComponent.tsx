@@ -140,14 +140,18 @@ export class BsaCalcComponent extends React.Component<{}, BsaCalcState> {
                         fontWeight: "bold",
                         fontSize: "24px",
                         textAlign: "center",
-                        marginTop: 50, 
-                        marginBottom: 50, 
+                        marginTop: 50,                          
                         paddingTop: 5,                        
                         paddingBottom: 5,
                         backgroundColor: "yellow"
                     }}>
                         Goal ECMO Flow: <br/>{this.state.goalFlowValue} L/min
                     </div>
+                    <div style={{
+                        marginTop: 5,
+                        marginBottom: 50,
+                        textAlign: "center"
+                    }}>Goal Flow = BSA x 2.4</div>
 
                     <Button onClick={this.resetFields}>Reset</Button>
 

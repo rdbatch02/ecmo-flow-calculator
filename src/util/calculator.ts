@@ -16,6 +16,6 @@ export class Calculator {
     }
 
     static calculateEcmoFlow(bsa: number, factor: number = 2.4): number {
-        return bsa * factor
+        return Calculator.round(bsa * factor, 3)
     }
 }

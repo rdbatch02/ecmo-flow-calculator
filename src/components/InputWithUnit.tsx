@@ -22,6 +22,8 @@ export class InputWithUnit extends React.Component<InputWithUnitProps, {}> {
                     placeholder={this.props.label}
                     onChange={this.props.onInputChange}
                     inputRef={this.props.inputRef}
+                    type="number"
+                    pattern="[0-9]*"
                     overrides={{
                         After: () => (
                         <Select
