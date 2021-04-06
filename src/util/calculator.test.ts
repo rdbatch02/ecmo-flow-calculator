@@ -18,3 +18,10 @@ test("Calculates BSA for 182cm 90kg", () => {
     const expectedBsa = 2.12
     expect(Calculator.calculateDuBoisBSA(height, weight)).toEqual(expectedBsa)
 })
+
+test("Calculates BSA for 180.4cm 97.8kg", () => {
+    const height = 180.4
+    const weight = 97.8
+    const expectedBsa = 2.18
+    expect(Calculator.calculateDuBoisBSA(height, weight)).toEqual(expectedBsa)
+})
